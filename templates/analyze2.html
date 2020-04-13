@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyze your text ..... </title>
+</head>
+<body>
+<h1> Your analyze text - {{ purpose }} </h1>
+
+<p>
+    {{ analyzed_text }}
+</p>
+
+<form action='/analyze' method='get'>
+    <textarea name='text' style='margin: 0px; width: 721px; hight: 93px'></textarea> <br>
+    <input type="checkbox" name="removepunc"> Remove punctuation <br>
+
+    <button type='submit'> Analyze text </button>
+</form>
+</body>
+</html>
